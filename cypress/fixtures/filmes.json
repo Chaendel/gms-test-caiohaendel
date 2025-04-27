@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Batman",
+        "ano": 2022,
+        "descricao": "Batman é um filme..."
+    },
+    {
+        "titulo": "Matrix",
+        "ano": 1999,
+        "descricao": "Matrix é um filme..."
+    },
+    {
+        "titulo": "Iron Man",
+        "ano": 2008,
+        "descricao": "Iron Man é um filme..."
+    },
+    {
+        "titulo": "Interstellar",
+        "ano": 2004,
+        "descricao": "Interstellar é um filme..."
+    }
+]
