@@ -12,7 +12,7 @@ describe('US-012-Funcionalidade: Buscar filmes', () => {
   it('Deve buscar filmes com sucesso', () => {
     cy.get('#search-input').type('Batman')
     cy.get('#search-button').click()
-    cy.get('#results-section').should('contain', 'Batmanfsdfsdfggs')
+    cy.get('#results-section').should('contain', 'Batman')
   })
 
   it('Deve buscar filmes com sucesso de uma lista', () => {
