@@ -5,6 +5,10 @@ describe('US-012-Funcionalidade: Buscar filmes', () => {
     cy.visit('/')
   })
 
+  afterEach(() => {
+    cy.screenshot()
+  })
+
   it('Deve buscar filmes com sucesso', () => {
     cy.get('#search-input').type('Batman')
     cy.get('#search-button').click()
@@ -19,10 +23,10 @@ describe('US-012-Funcionalidade: Buscar filmes', () => {
     })
   })
 
-  it.only('Deve buscar filmes com sucesso de uma lista interia', () => {
+  it('Deve buscar filmes com sucesso de uma lista interia', () => {
     cy.fixture('filmes').each((filmes) => {
       cy.get('#search-input').clear().type(filmes.titulo)
-      cy.get('#search-button').click({force: true})
+      cy.get('#search-button').click({ force: true })
       cy.get('#results-section').should('contain', filmes.titulo)
     })
   })
